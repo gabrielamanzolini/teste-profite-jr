@@ -4,6 +4,7 @@ sans-serif;
 $white: #fff;
 
 body {
+    margin: 0;
     background-color: $white;
 
     header {
@@ -13,14 +14,14 @@ body {
 
         .container {
             .logo {
-                margin-left: 182px;
+                margin-left: 12.2%;
             }
 
             display: flex;
             flex-wrap: wrap;
 
             .input {
-                margin-left: 10.5%;
+                margin-left: 10%;
                 width: 29%;
                 margin-top: 5px;
 
@@ -34,7 +35,7 @@ body {
             .my-account-container {
                 display: flex;
                 flex-wrap: wrap;
-                margin: 0px 0 0 168px;
+                margin: -5px 0 0 11%;
 
                 .my-acc-content {
                     align-items: center;
@@ -50,12 +51,12 @@ body {
                 }
 
                 .mini-cart-content {
-                    margin: 4px 22px;
+                    margin: 9px 22px;
                 }
             }
 
             .languages-container {
-                margin: 6px 0px 6px 36px;
+                margin: 6px 0px 6px 2.5%;
 
                 img {
                     margin-right: 18px;
@@ -78,6 +79,10 @@ body {
             }
             &.slick-next {
                 right: 18%;
+
+                &:before {
+                    font-size: 33px;
+                }
             }
         }
         .slick-dots {
@@ -88,7 +93,7 @@ body {
                         font-size: 11px;
                         width: 50px;
                         height: 50px;
-                        color: #FF9F1C;
+                        color: #fff;
                     }
                 }
                 &.slick-active {
