@@ -1,20 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+$ubuntu: 'Ubuntu', sans-serif;
 $white: #fff;
 
 body {
     background-color: $white;
 
     header {
-        width: 61%;
+        width: 80%;
         display: block;
         margin: 25px auto;
 
         .container {
+            .logo {
+                margin-left: 182px;
+            }
             display: flex;
             flex-wrap: wrap;
 
             .input {
-                margin-left: 13.5%;
-                width: 38%;
+                margin-left: 10.5%;
+                width: 29%;
+                margin-top: 5px;
 
                 input {
                     width: 100%;
@@ -26,7 +32,31 @@ body {
             .my-account-container {
                 display: flex;
                 flex-wrap: wrap;
-                margin: 1px 0 0 165px;
+                margin: 1px 0 0 161px;
+
+                .my-acc-content {
+                    align-items: center;
+                    display: flex;
+
+                    a {
+                        text-decoration: none;
+                        margin-left: 3px;
+                        font-family: $ubuntu;
+                        text-transform: capitalize;
+                        font-size: 13px;
+                    }
+                }
+
+                .mini-cart-content {
+                    margin: 4px 22px;
+                }
+            }
+
+            .languages-container {
+                margin: 6px 0px 6px 36px;
+                img {
+                    margin-right: 18px;
+                }
             }
         }
     }
