@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
-$ubuntu: 'Ubuntu', sans-serif;
+$ubuntu: 'Ubuntu',
+sans-serif;
 $white: #fff;
 
 body {
@@ -8,12 +9,13 @@ body {
     header {
         width: 80%;
         display: block;
-        margin: 25px auto;
+        margin: 25px auto 20px;
 
         .container {
             .logo {
                 margin-left: 182px;
             }
+
             display: flex;
             flex-wrap: wrap;
 
@@ -32,7 +34,7 @@ body {
             .my-account-container {
                 display: flex;
                 flex-wrap: wrap;
-                margin: 1px 0 0 161px;
+                margin: 0px 0 0 168px;
 
                 .my-acc-content {
                     align-items: center;
@@ -54,8 +56,47 @@ body {
 
             .languages-container {
                 margin: 6px 0px 6px 36px;
+
                 img {
                     margin-right: 18px;
+                }
+            }
+        }
+    }
+
+    .slick-slider {
+        .slick-arrow {
+            position: absolute;
+
+            &.slick-prev {
+                left: 17%;
+                z-index: 1;
+
+                &:before {
+                    font-size: 33px;
+                }
+            }
+            &.slick-next {
+                right: 18%;
+            }
+        }
+        .slick-dots {
+            bottom: 38px;
+            li {
+                button {
+                    &:before {
+                        font-size: 11px;
+                        width: 50px;
+                        height: 50px;
+                        color: #FF9F1C;
+                    }
+                }
+                &.slick-active {
+                    button {
+                        &:before {
+                            color: #FF9F1C;
+                        }
+                    }
                 }
             }
         }
