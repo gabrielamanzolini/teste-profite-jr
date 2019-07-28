@@ -111,12 +111,85 @@ body {
         }
     }
 
+    .main-content {
+        display: flex;
+        justify-content: center;
+        font-family: $ubuntu;
+        height: 100%;
+        margin-top: 65px;
+        margin-bottom: 100px;
+
+        .slick-slider {
+            width: 60%;
+
+            .slick-prev:before,
+            .slick-next:before {
+                color: black;
+            }
+
+            .slick-prev {
+                left: -50px !important;
+            }
+
+            .slick-next {
+                right: -40px !important;
+            }
+        }
+
+        .item-container {
+            text-align: center;
+
+            &:hover {
+                background: #F2F2F2;
+                border: 1.44041px solid #F2F2F2;
+            }
+            img {
+                margin: auto;
+            }
+
+            a {
+                text-decoration: none;
+                color: #7A7A7A;
+                font-weight: 500;
+                font-size: 12px;
+            }
+
+            .last-value {
+                font-size: 12px;
+                text-decoration: line-through;
+            }
+
+            .new-value {
+                font-size: 18px;
+                font-weight: bold;
+                color: #2EC4B6;
+            }
+
+            .valor-parcelado {
+                font-size: 11px;
+                line-height: 13px;
+                text-align: center;
+
+                color: #7A7A7A;
+            }
+            button {
+                width: 125.28px;
+                height: 32.42px;
+                font-family: $ubuntu;
+                color: #fff;
+                background-color: #2EC4B6;
+                border: none;
+                text-transform: uppercase;
+                border-radius: 5px;
+            }
+        }
+    }
+
     footer {
         font-family: $ubuntu;
         background-color: #011627;
         position: absolute;
         width: 100%;
-        bottom: 0;
 
         .footer-container {
             width: 80%;
@@ -144,11 +217,13 @@ body {
 
             .localization {
                 margin-left: 188px;
+
                 h2 {
                     font-weight: bold;
                     font-size: 20px;
                     margin: 22px 0 12px;
                 }
+
                 .localization-address {
                     display: flex;
                     flex-wrap: wrap;
@@ -160,16 +235,17 @@ body {
             }
 
             .contact-content {
-                width: 15%;
+                width: 21%;
                 display: block;
                 margin-left: 141px;
+
                 .btn-contato {
                     width: 195px;
                     height: 38px;
                     background-color: #FF9F1C;
                     border: none;
                     border-radius: 5px;
-                    font-family: "Ubuntu",sans-serif;
+                    font-family: "Ubuntu", sans-serif;
                     color: #fff;
                     margin-top: 1em;
                     position: absolute;
@@ -177,16 +253,20 @@ body {
                     bottom: 35px;
 
                     &.btn-mail {
-                        bottom: 98px!important;
+                        bottom: 98px !important;
                     }
                 }
             }
 
             .powered-by-container {
-                margin-left: 320px;
-                img{
+                position: relative;
+                width: 13%;
+                height: auto;
+
+                img {
                     position: absolute;
                     bottom: 37px;
+
                     &:last-of-type {
                         margin-left: 77px;
                     }
