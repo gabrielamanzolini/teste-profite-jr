@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
-$ubuntu: 'Ubuntu', sans-serif;
+$ubuntu: 'Ubuntu',
+sans-serif;
 $white: #fff;
 
 body {
@@ -76,6 +77,7 @@ body {
                     font-size: 33px;
                 }
             }
+
             &.slick-next {
                 right: 18%;
 
@@ -84,8 +86,10 @@ body {
                 }
             }
         }
+
         .slick-dots {
             bottom: 38px;
+
             li {
                 button {
                     &:before {
@@ -95,6 +99,7 @@ body {
                         color: #fff;
                     }
                 }
+
                 &.slick-active {
                     button {
                         &:before {
@@ -109,22 +114,90 @@ body {
     footer {
         font-family: $ubuntu;
         background-color: #011627;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+
         .footer-container {
             width: 80%;
+            height: 222px;
             display: block;
             margin: auto;
             color: #fff;
             display: flex;
             flex-wrap: wrap;
+
             p {
                 margin: 0;
             }
+
+            h3 {
+                font-size: 16px;
+                margin-bottom: 4px;
+            }
+
+            .separador {
+                width: 44px;
+                height: 7px;
+                background-color: #FF9F1C;
+            }
+
             .localization {
+                margin-left: 188px;
+                h2 {
+                    font-weight: bold;
+                    font-size: 20px;
+                    margin: 22px 0 12px;
+                }
                 .localization-address {
                     display: flex;
                     flex-wrap: wrap;
+
+                    .address-rio {
+                        margin-left: 15px;
+                    }
                 }
             }
+
+            .contact-content {
+                width: 15%;
+                display: block;
+                margin-left: 141px;
+                .btn-contato {
+                    width: 195px;
+                    height: 38px;
+                    background-color: #FF9F1C;
+                    border: none;
+                    border-radius: 5px;
+                    font-family: "Ubuntu",sans-serif;
+                    color: #fff;
+                    margin-top: 1em;
+                    position: absolute;
+                    text-transform: uppercase;
+                    bottom: 35px;
+
+                    &.btn-mail {
+                        bottom: 98px!important;
+                    }
+                }
+            }
+
+            .powered-by-container {
+                margin-left: 320px;
+                img{
+                    position: absolute;
+                    bottom: 37px;
+                    &:last-of-type {
+                        margin-left: 77px;
+                    }
+                }
+            }
+        }
+
+        .bottom-separator {
+            width: 100%;
+            height: 10px;
+            background: #2EC4B6;
         }
     }
 }

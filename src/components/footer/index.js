@@ -36,6 +36,7 @@ const Footer = props => {
                     <img src={vtexLogo} alt="logo"/>
                 </div>
             </Container>
+            <div className="bottom-separator"></div>
         </footer>
     )
 }
