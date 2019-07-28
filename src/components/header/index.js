@@ -11,7 +11,7 @@ const Header = props => {
     return (
         <header>
             <Container>
-                <img src={logo} alt="logo" class="logo"/>
+                <img src={logo} alt="logo" className="logo"/>
                 <div className="ui icon input">
                     <input type="text" placeholder="O que está procurando?"/>
                     <i className="search icon"></i>

@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
-$ubuntu: 'Ubuntu',
-sans-serif;
+$ubuntu: 'Ubuntu', sans-serif;
 $white: #fff;
 
 body {
@@ -102,6 +101,28 @@ body {
                             color: #FF9F1C;
                         }
                     }
+                }
+            }
+        }
+    }
+
+    footer {
+        font-family: $ubuntu;
+        background-color: #011627;
+        .footer-container {
+            width: 80%;
+            display: block;
+            margin: auto;
+            color: #fff;
+            display: flex;
+            flex-wrap: wrap;
+            p {
+                margin: 0;
+            }
+            .localization {
+                .localization-address {
+                    display: flex;
+                    flex-wrap: wrap;
                 }
             }
         }

@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/gabrielamanzolini/teste-profite-jr#readme",
   "dependencies": {
+    "jquery": "^3.4.1",
     "npm-watch": "^0.6.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
