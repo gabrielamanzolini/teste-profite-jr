@@ -49,7 +49,7 @@ class App extends Component {
       slidesToShow: 2,
       slidesToScroll: 1
     }
-    if(this.state.width > 1200) {
+    if(this.state.width > 1024) {
       return (
         <div className="App desktop">
           <Header/>
