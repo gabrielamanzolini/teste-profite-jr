@@ -13,6 +13,13 @@ body {
             display: block;
             margin: 25px auto 20px;
 
+            .itens-in-cart {
+                font-family: $ubuntu;
+                background-color: #2EC4B6;
+                border-radius: 100%; 
+                color: #fff;
+                padding: 5px;
+            }
             .container {
                 .logo {
                     margin-left: 12.2%;
@@ -25,11 +32,15 @@ body {
                     margin-left: 10%;
                     width: 29%;
                     margin-top: 5px;
-
+                    position: relative;
                     input {
                         width: 100%;
                         border: none;
                         border-bottom: 1px solid;
+                    }
+                    .search-icon {
+                        position: absolute;
+                        right: 0;
                     }
                 }
 
@@ -257,6 +268,33 @@ body {
 
                         &.btn-mail {
                             bottom: 98px !important;
+    
+                            &:before {
+                                content: "";
+                                background-image: url(/static/media/mail-icon.a0199707.svg);
+                                width: 20px;
+                                height: 20px;
+                                display: block;
+                                background-repeat: no-repeat;
+                                position: absolute;
+                                margin-top: -1px;
+                                margin-left: 4px;
+                            }
+                        }
+    
+                        &.btn-consultor {
+                            &:before {
+                                content: "";
+                                background-image: url(../img/headset-icon.svg);
+                                width: 20px;
+                                height: 20px;
+                                display: block;
+                                background-repeat: no-repeat;
+                                position: absolute;
+                                margin-top: 1px;
+                                margin-left: 4px;
+                                background-size: cover;
+                            }
                         }
                     }
                 }
@@ -287,6 +325,19 @@ body {
 
     .mobile {
         header {
+            .mini-cart-content {
+                display: flex;
+            }
+            .itens-in-cart {
+                font-family: "Ubuntu",sans-serif;
+                background-color: #2EC4B6;
+                border-radius: 100%;
+                width: 20px;
+                height: 20px;
+                color: #fff;
+                padding: 2px;
+                text-align: center;
+            }
             .container {
                 display: flex;
                 flex-wrap: wrap;

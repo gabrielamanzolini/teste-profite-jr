@@ -38,7 +38,7 @@ const HeaderMobile = props => {
                 <div className="my-account-container">
                     <div className="mini-cart-content">
                         <img src={minicart} alt="minicart"/>
-                        <span className="itens-in-cart"></span>
+                        <span className="itens-in-cart">01</span>
                     </div>
                 </div>
 

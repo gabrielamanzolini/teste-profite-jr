@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container } from 'semantic-ui-react'
 import logo from '../../img/logo-profite.svg';
+import searchIcon from '../../img/search-icon.svg'
 import profileIcon from '../../img/profile-icon.svg';
 import minicart from '../../img/minicart-vector.svg';
 import brazil from '../../img/BR.svg';
@@ -14,7 +15,7 @@ const Header = props => {
                 <img src={logo} alt="logo" className="logo"/>
                 <div className="ui icon input">
                     <input type="text" placeholder="O que está procurando?"/>
-                    <i className="search icon"></i>
+                    <img className="search-icon" src={searchIcon}/>
                 </div>
                 <div className="my-account-container">
                     <div className="my-acc-content">
@@ -23,7 +24,7 @@ const Header = props => {
                     </div>
                     <div className="mini-cart-content">
                         <img src={minicart} alt="minicart"/>
-                        <span className="itens-in-cart"></span>
+                        <span className="itens-in-cart">01</span>
                     </div>
                 </div>
                 <div className="languages-container">
